@@ -5,11 +5,14 @@
 #include <map>
 #include <string>
 
-typedef std::map<std::string, void*> Dict;
+class Dict {
+	public:
+	std::map<std::string, void*> _dict;
+};
 
 #else
 
-typedef struct dict Dict;
+typedef struct Dict Dict;
 
 #endif
 
