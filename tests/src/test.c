@@ -1,15 +1,20 @@
 #include "CppUTest/TestHarness_c.h"
 
-TEST_GROUP_C_SETUP(template_name)
+#include "dict.h"
+
+TEST_GROUP_C_SETUP(dict)
 {
 }
 
-TEST_GROUP_C_TEARDOWN(template_name)
+TEST_GROUP_C_TEARDOWN(dict)
 {
 }
 
-TEST_C(template_name, dummy_test)
+TEST_C(dict, dummy_test)
 {
-	CHECK_C(1==1);
+	const char a[] = "a";
+	Dict dict;
+	dict_set(&dict, "a", &a);
+	CHECK_C(*(char*)dict_get(&dict, "a", NULL)=='a');
 }
 

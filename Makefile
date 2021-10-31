@@ -1,7 +1,7 @@
 .SUFFIXES:
 .SUFFIXES: .c .o .d .h .cpp .hpp
 
-PROJECT_NAME := template
+PROJECT_NAME := dict
 
 COMMON_FLAGS := -fexceptions
 debug ?= false
@@ -28,7 +28,7 @@ CPP_OBJECTS := $(patsubst %.cpp,%.o,${CPP_SOURCES})
 OBJECTS := ${CPP_OBJECTS} ${C_OBJECTS}
 DEPENDENCIES := $(patsubst %.c,%.d,${C_SOURCES}) $(patsubst %.cpp,%.d,${CPP_SOURCES})
 
-INCLUDE_FLAGS := -I./include -I./simple_dict/include
+INCLUDE_FLAGS := -I./include
 WARNING_FLAGS := -Wextra -Wall -Wshadow -Wdouble-promotion \
 	-Wformat=2 -Wformat-truncation -fno-common -Wconversion -Warray-bounds \
 	-Wtrampolines -Wswitch-enum
