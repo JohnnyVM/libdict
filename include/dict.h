@@ -7,6 +7,8 @@
 #include <utility>
 #include <string>
 
+#define LIBDICT_VERSION 1
+
 class Dict {
 	public:
 	std::vector<std::pair<std::string, void*> > pair;
