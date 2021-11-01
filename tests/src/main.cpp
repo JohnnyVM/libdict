@@ -1,6 +1,8 @@
 #include "CppUTest/CommandLineTestRunner.h"
 #include "CppUTest/TestHarness_c.h"
 
+#include "dict.h"
+
 /** For each C test group */
 TEST_GROUP_C_WRAPPER(dict)
 {

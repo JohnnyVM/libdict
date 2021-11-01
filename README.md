@@ -1,2 +1,2 @@
-# C-template
-C template repository
+# libdict
+C wrapper for a map implementation that keep the insertion order
