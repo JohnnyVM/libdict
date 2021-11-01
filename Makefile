@@ -65,4 +65,5 @@ clean:
 
 install:
 	cp lib/* ${PREFIX}/lib
-	cp include/* ${PREFIX}/include
+	cp -r . ${PREFIX}/include/
+
